@@ -1,0 +1,11 @@
+var url = "https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript";
+var arr= url.split("");
+// console.log(arr);
+var index =arr.indexOf(":");
+var protocal = arr.splice(0,index).join("");
+console.log(protocal);
+// console.log(arr);
+arr.splice(0,3);
+// console.log(arr.indexOf('/'));
+var domain = arr.splice(0, arr.indexOf('/')).join("");
+console.log(domain);
